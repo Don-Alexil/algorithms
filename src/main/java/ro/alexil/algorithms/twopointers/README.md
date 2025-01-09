@@ -10,4 +10,4 @@ should be the first strategy to come to mind.
 
 ## Problems 
 
-    - [Valid Palindrome] (./a01/README.md)
+    - [Valid Palindrome](./a01/README.md)
