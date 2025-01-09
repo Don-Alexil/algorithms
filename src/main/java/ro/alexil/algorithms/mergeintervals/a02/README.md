@@ -1,7 +1,9 @@
 # Insert Interval
+
 ## Statement
 
-Given a sorted list of nonoverlapping intervals and a new interval, insert the new interval while maintaining sorted, nonoverlapping intervals. Each interval contains start and end times as nonnegative numbers.
+Given a sorted list of nonoverlapping intervals and a new interval, insert the new interval while maintaining sorted, 
+nonoverlapping intervals. Each interval contains start and end times as nonnegative numbers.
 
 ## Constraints
 - Number of existing intervals between 0 and 10⁴
