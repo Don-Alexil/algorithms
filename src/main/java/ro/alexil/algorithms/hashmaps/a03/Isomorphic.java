@@ -5,7 +5,7 @@ import ro.alexil.algorithms.utils.Print;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Polimorphic {
+public class Isomorphic {
 
     public static boolean isIsomorphic(String string1, String string2) {
         if(string1.length() != string2.length()){

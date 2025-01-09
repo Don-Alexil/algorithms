@@ -2,9 +2,12 @@
 
 ## Problem Statement
 
-Given two strings, check whether they are **isomorphic** or not. Two strings are isomorphic if a **fixed mapping** exists from the characters of one string to the characters of the other string.
+Given two strings, check whether they are **isomorphic** or not. Two strings are isomorphic 
+if a **fixed mapping** exists from the characters of one string to the characters of the other string.
 
-For example, if there are two instances of the character `"a"` in the first string, both of these instances should be converted to the same character in the second string. This converted character should remain consistent across both positions in the second string, due to the fixed mapping between the characters of the two strings.
+For example, if there are two instances of the character `"a"` in the first string, both of these instances 
+should be converted to the same character in the second string. This converted character should remain consistent 
+across both positions in the second string, due to the fixed mapping between the characters of the two strings.
 
 ### Important Notes:
 
