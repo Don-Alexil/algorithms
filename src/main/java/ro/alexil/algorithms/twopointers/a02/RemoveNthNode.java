@@ -6,9 +6,9 @@ import ro.alexil.algorithms.utils.PrintList;
 
 public class RemoveNthNode {
 
-    public static LinkedListNode removeNthLastNode(LinkedListNode head, int n) {
-        LinkedListNode right = head;
-        LinkedListNode left = head;
+    public static LinkedListNode<Integer> removeNthLastNode(LinkedListNode<Integer> head, int n) {
+        LinkedListNode<Integer> right = head;
+        LinkedListNode<Integer> left = head;
 
         for (int i = 0; i < n && right.next != null ; i++) {
             right = right.next;
@@ -41,13 +41,12 @@ public class RemoveNthNode {
         int[] n = {4, 1, 6, 9, 11};
 
         for (int i = 0; i < inputs.length; i++) {
-            var inputLinkedList = new LinkedList<Integer>();
-            inputLinkedList.createLinkedList(inputs[i]);
+            var inputLinkedList = LinkedList.createLinkedList(inputs[i]);
             System.out.print((i + 1) + ".\tLinked List:\t\t");
-            PrintList.printListWithForwardArrow(inputLinkedList.head);
+            PrintList.printListWithForwardArrow(inputLinkedList);
             System.out.print("\n\tn = " + n[i]);
             System.out.print("\n\tUpdated Linked List:\t");
-            PrintList.printListWithForwardArrow(removeNthLastNode(inputLinkedList.head, n[i]));
+            PrintList.printListWithForwardArrow(removeNthLastNode(inputLinkedList, n[i]));
             System.out.println();
             System.out.println(new String(new char[100]).replace('\0', '-'));
         }

@@ -6,10 +6,10 @@ import ro.alexil.algorithms.utils.PrintList;
 
 public class ReverseNodes {
 
-    public static LinkedListNode reverseEven(LinkedListNode head) {
-        LinkedListNode prev = head;
+    public static <T> LinkedListNode<T> reverseEven(LinkedListNode<T> head) {
+        LinkedListNode<T> prev = head;
         int groupLen = 2;
-        LinkedListNode node = head;
+        LinkedListNode<T> node = head;
         while (prev.next != null) {
             // advance in the group
             int numNodes = 0;
@@ -24,11 +24,11 @@ public class ReverseNodes {
             // check if even number
             if(numNodes % 2 == 0) {
                 // reverse the nodes
-                LinkedListNode curr = prev.next;
-                LinkedListNode prevNext = node.next;
+                LinkedListNode<T> curr = prev.next;
+                LinkedListNode<T> prevNext = node.next;
                 node = curr;
                 for (int i =1; i < numNodes; i++) {
-                    LinkedListNode next = curr.next;
+                    LinkedListNode<T> next = curr.next;
                     curr.next = prevNext;
                     prevNext = curr;
                     curr = next;
@@ -53,12 +53,11 @@ public class ReverseNodes {
         };
 
         for (int i = 0; i < input.length; i++) {
-            LinkedList<Integer> inputLinkedList = new LinkedList<>();
-            inputLinkedList.createLinkedList(input[i]);
+            var inputLinkedList = LinkedList.createLinkedList(input[i]);
             System.out.print((i + 1) + ".\tInput linked list: ");
-            PrintList.printListWithForwardArrow(inputLinkedList.head);
+            PrintList.printListWithForwardArrow(inputLinkedList);
             System.out.print("\n");
-            LinkedListNode head = reverseEven(inputLinkedList.head);
+            LinkedListNode head = reverseEven(inputLinkedList);
             System.out.print("\n\tReversed even for linked list: ");
             PrintList.printListWithForwardArrow(head);
             System.out.println();

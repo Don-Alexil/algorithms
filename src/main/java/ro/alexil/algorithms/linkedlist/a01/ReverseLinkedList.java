@@ -6,10 +6,10 @@ import ro.alexil.algorithms.utils.PrintList;
 
 public class ReverseLinkedList {
 
-    public static LinkedListNode reverse(LinkedListNode head) {
-        LinkedListNode prev = null;
-        LinkedListNode next;
-        LinkedListNode curr = head;
+    public static LinkedListNode<Integer> reverse(LinkedListNode<Integer> head) {
+        LinkedListNode<Integer> prev = null;
+        LinkedListNode<Integer> next;
+        LinkedListNode<Integer> curr = head;
 
         while (curr != null) {
             next = curr.next;
@@ -33,12 +33,11 @@ public class ReverseLinkedList {
         };
 
         for (int i = 0; i < input.length; i++) {
-            LinkedList<Integer> inputLinkedList = new LinkedList<Integer>();
-            inputLinkedList.createLinkedList(input[i]);
+            LinkedListNode<Integer> inputLinkedList = LinkedList.createLinkedList(input[i]);
             System.out.print((i + 1) + ".\tInput linked list: ");
-            PrintList.printListWithForwardArrow(inputLinkedList.head);
+            PrintList.printListWithForwardArrow(inputLinkedList);
             System.out.print("\n\tReversed linked list: ");
-            PrintList.printListWithForwardArrow(reverse(inputLinkedList.head));
+            PrintList.printListWithForwardArrow(reverse(inputLinkedList));
             System.out.println();
             System.out.println(new String(new char[100]).replace('\0', '-'));
         }

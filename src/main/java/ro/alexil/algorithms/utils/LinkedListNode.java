@@ -1,10 +1,10 @@
 package ro.alexil.algorithms.utils;
 
-public class LinkedListNode {
-    public int data;
-    public LinkedListNode next;
+public class LinkedListNode<T> {
+    public final T data;
+    public LinkedListNode<T> next;
     // LinkedListNode() will be used to make a LinkedListNode type object.
-    public LinkedListNode(int data) {
+    public LinkedListNode(T data) {
         this.data = data;
         this.next = null;
     }
