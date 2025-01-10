@@ -1,12 +1,11 @@
 # Remove Duplicates from Sorted List
 
-## Problem Statement
-
-Given the head of a sorted linked list, remove all duplicates such that each element appears only once, and return 
-the list in sorted order.
+## Statement
+Given the head of a sorted linked list, delete all duplicates so each element appears once. 
+Return the modified list in sorted order.
 
 ## Constraints
+- List length between 1 and 300 nodes
+- Node values between -100 and 100
+- List is sorted ascending
 
-- (0 < n < 300), where (n) is the number of nodes in the list.
-- (-100 < Node.data < 100). 
-- The list is guaranteed to be sorted in ascending order.
