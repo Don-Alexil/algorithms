@@ -12,4 +12,6 @@ memory.
 
 - [Reverse Linked List](./a01/README.md)
 - [Reverse Nodes in Even-Length Groups](./a02/README.md)
+- [Remove Duplicates](./a03/README.md)
+- [Remove Elements](./a04/README.md)
 
