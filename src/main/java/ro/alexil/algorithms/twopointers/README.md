@@ -11,3 +11,6 @@ should be the first strategy to come to mind.
 ## Problems 
 
     - [Valid Palindrome](./a01/README.md)
+    - [Remove Nth Node](./a02/README.md)
+    - [Sort Colors](./a03/README.md)
+    - [Reverse Words](./a04/README.md)
