@@ -14,7 +14,6 @@ public class HappyNumber {
         return fast == 1;
     }
 
-
     public static int nextNumber(int n) {
         if (n > 9) {
             var modulo = n % 10;
