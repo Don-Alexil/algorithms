@@ -54,4 +54,17 @@ public class LinkedList {
         return count;
     }
 
+    public static LinkedListNode<Integer> createCircularLinkedList(int[] ints) {
+        if(ints == null || ints.length == 0) {
+            return null;
+        }
+        LinkedListNode<Integer> tail = new LinkedListNode<>(ints[ints.length-1]);
+        LinkedListNode<Integer> head = tail;
+        for (int i = ints.length - 2; i >= 0; i--) {
+            LinkedListNode<Integer> newNode = new LinkedListNode<>(ints[i]);
+            head = insertNodeAtHead(head, newNode);
+        }
+        tail.next = head;
+        return head;
+    }
 }

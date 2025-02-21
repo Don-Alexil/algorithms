@@ -57,4 +57,5 @@ compilation sequence.
 
 - [Happy Number](./a01/README.md)
 - [Cycle Detection](./a02/README.md)
-- 
+- [Middle node](./a03/README.md)
+- [Split circular linked list](./a04/README.md)

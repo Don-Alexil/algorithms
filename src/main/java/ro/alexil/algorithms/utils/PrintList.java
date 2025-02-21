@@ -9,6 +9,23 @@ public class PrintList {
         System.out.print(" → null ");
     }
 
+    public static void printCircularList(LinkedListNode head) {
+        if(head == null) {
+            System.out.print("↓");
+            return;
+        }
+        LinkedListNode temp = head;
+
+        while (temp.next != head) {
+            System.out.print(temp.data); // print node value
+            temp = temp.next;
+            System.out.print(" → ");
+        }
+        System.out.print(temp.data);
+        System.out.print(" ↓");
+    }
+
+
     public static void printListWithForwardArrowLoop(LinkedListNode head) {
         LinkedListNode temp = head;
 
@@ -20,4 +37,6 @@ public class PrintList {
             }
         }
     }
+
+
 }

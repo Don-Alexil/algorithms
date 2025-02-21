@@ -8,5 +8,6 @@ Welcome to the algorithms page they are structured by patterns used
 - [Hash Maps](./src/main/java/ro/alexil/algorithms/hashmaps/README.md)
 - [Binary Search](./src/main/java/ro/alexil/algorithms/binarysearch/README.md)
 - [Top K Elements]()
-
+- [Stacks](./src/main/java/ro/alexil/algorithms/stacks/README.md)
+- [Fast ans Slow pointers](./src/main/java/ro/alexil/algorithms/fastslow/README.md)
   
