@@ -52,10 +52,6 @@ public class ReorganizeString {
             if(counter > 0) {
                 previous = new CharCounter(current.character, counter);
             }
-
-
-
-
         }
         return result.toString();
     }

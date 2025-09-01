@@ -2,20 +2,6 @@ package ro.alexil.algorithms.twopointers.a01;
 
 public class ValidPalindrome {
 
-    //Driver code
-    public static void main(String[] arg) {
-        String[] testCase = {
-                "RACECAR",
-                "ABBA",
-                "TART"
-        };
-        for (int k = 0; k < testCase.length; k++) {
-            System.out.println("Test Case # " + (k + 1));
-            System.out.println(testCase[k] + " is palindrome : " + isPalindrome(testCase[k]));
-            System.out.println(new String(new char[100]).replace('\0', '-'));
-        }
-    }
-
     /**
      *
      * @param s - the input string
@@ -38,5 +24,18 @@ public class ValidPalindrome {
         return true;
     }
 
+    //Driver code
+    public static void main(String[] arg) {
+        String[] testCase = {
+                "RACECAR",
+                "ABBA",
+                "TART"
+        };
+        for (int k = 0; k < testCase.length; k++) {
+            System.out.println("Test Case # " + (k + 1));
+            System.out.println(testCase[k] + " is palindrome : " + isPalindrome(testCase[k]));
+            System.out.println(new String(new char[100]).replace('\0', '-'));
+        }
+    }
 
 }

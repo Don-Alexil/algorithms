@@ -45,6 +45,7 @@ public class Calculator {
         result += currentSign * currentNumber;
         return result;
     }
+
     public static void main(String[] args) {
         String[] inputs = {
                 "1+1",
